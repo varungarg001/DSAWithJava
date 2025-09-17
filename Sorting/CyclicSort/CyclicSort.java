@@ -10,7 +10,7 @@ public class CyclicSort {
         cyclicSort(arr);
     }
 
-    static void cyclicSort(int[] arr) {
+    public static void cyclicSort(int[] arr) {
         int index = 0;
         while (index < arr.length) {
             int actualPos = arr[index] - 1;
