@@ -1,0 +1,9 @@
+in this lecture 4 we will find out how to convert a number into its corresponding bits and we are using 8 - bits number.
+In odd even bits program we know how to print odd and even using modulus operator but in this we see how we can done this using bits operarion.
+In find ith bit program we will try to find out the i'th bit of the number.
+in set the i'th bit program we will manually set the bit the i'th if it is not set.
+in toggle ith bit program, 0->1 , 1->0 basically 1's complement xor will be used.
+in unset ith bit program, 1->0,0->0.
+in power of two we will do, try to find that given number is power of two or not. by doing num&num-1->0.
+in unset rightmost ith bit -> we will unset the right most set bit.
+in count the set bit program, we will try to count number of set bit in a number

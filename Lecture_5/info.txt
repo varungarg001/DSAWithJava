@@ -1,0 +1,6 @@
+in clear lsb program -> in this we will unset the bit from 0 to the given bit.
+in clear msb program -> in this we will try to unset the bit from msb to given bit.
+in character conversion program -> 'a'->'A' and 'A'->'a' using bit manipulation.
+in swapping of two number we will try to swap two number using bit manipulation.
+in unique number array program -> we'll try to find out the unique number in an array.
+in find two unique element -> we will try to find two unique element present in the array.
