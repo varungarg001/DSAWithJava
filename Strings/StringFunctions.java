@@ -14,5 +14,18 @@ public class StringFunctions {
         String str = "        champion        ";
         System.out.println(str);
         System.out.println(str.trim());
+
+        System.out.println(name.subSequence(1, 11));
+
+        String email1 = "varun124@gmail.com";
+        String email2 = "avemger@miet.com";
+
+        String[] email = email2.split("@");
+        String lastPart = email[email.length - 1];
+
+        int dotIndex = lastPart.lastIndexOf(".");
+        System.out.println(lastPart.substring(0, dotIndex));
+
+
     }
 }
