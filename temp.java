@@ -1,38 +1,20 @@
+import java.util.Scanner;
+
 public class temp {
+
     public static void main(String[] args) {
-        String a = "kumud";
-        String b = "kumar";
+        Scanner scanner = new Scanner(System.in);
 
-        String longer="";
-        String shorter="";
-
-        if (a.length() > b.length()) {
-            longer = a;
-            shorter = b;
-        } else if (a.length() < b.length()) {
-            longer = b;
-            shorter = a;
-        } else {
-            for (int i = 0; i < a.length(); i++) {
-                int char1 = a.charAt(i);
-                int char2 = b.charAt(i);
-
-                if (char1 > char2) {
-                    shorter = b;
-                    longer = a;
-                    break;
-                } else if (char1 < char2) {
-                    shorter = a;
-                    longer = b;
-                    break;
-                }
-            }
-        }
+        System.out.println("Enter a word ");
+        String word = scanner.next();
         
-        System.out.println(longer+" "+shorter);
+        // next( ) reads a word and stops when it reads a space but it does not takes the nextline character when Enter is pressed after giving input.
+        // The leftover newline is left in the input buffer(where all input which we type is stored) and when nextLine() method is used, it reads the leftover newline(\n) character by next() and immediately stops and returns an empty string.
 
-     
-
-        
+        System.out.println("Enter a line ");
+        String line = scanner.nextLine();
+        System.out.println("word is: "+word);
+        System.out.println("line is: " + line);
+        scanner.close();
     }
 }
