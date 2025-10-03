@@ -1,15 +1,15 @@
 package Collection.ListInterface;
 
-import java.util.ArrayList;
+// import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ListInterface {
+public class LinkedListClass {
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>();
-
+        List<Integer> list = new LinkedList<>(); // doubly ll
         // operations
 
         // insertions of an element
@@ -63,39 +63,5 @@ public class ListInterface {
             // postive B->A
         });
         System.out.println(list);
-
-        List<Student> list1 = new ArrayList<>();
-        list1.add(new Student("hello", 10));
-        list1.add(new Student("varun", 50));
-        list1.add(new Student("sandeep", 60));
-
-        // list1.sort(new Comparator<Student>() {
-        //     public int compare(Student A, Student B) {
-        //         return A.rollNumber - B.rollNumber;     // to sort in ascending order
-        //         // return B.rollNumber - A.rollNumber;  // to sorting done in deascending order
-        //     }
-        // });
-
-        // for (Student a : list1) {
-        //     System.out.println(a);
-        // }
-
     }
-}
-
-class Student {
-    String name;
-    int rollNumber;
-
-    public Student(String name, int rollNumber) {
-        this.name = name;
-        this.rollNumber = rollNumber;
-    }
-
-    @Override
-    public String toString() {
-        return name;
-    }
-
-    
 }
