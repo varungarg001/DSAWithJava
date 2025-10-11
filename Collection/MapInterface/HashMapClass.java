@@ -6,6 +6,8 @@ public class HashMapClass {
     public static void main(String[] args) {
         Map<Integer, String> myMap = new HashMap<>();
 
+        // in hashmap order of insertion may be different but in to insert in element in the way we entered then we use LinkedHashMop
+
         myMap.put(1, "varun kumar");
         myMap.put(2, "nishchal");
         // myMap.put(1, "dushyant");
@@ -38,7 +40,7 @@ public class HashMapClass {
             System.out.println(entry);
         }
         
-        
+
         for(String entry:myMap.values()){
             System.out.println(entry);
         }
