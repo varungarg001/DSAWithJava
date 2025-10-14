@@ -1,6 +1,6 @@
 package Queue;
 
-public class QueueEmpty extends Exception{
+public class QueueEmpty extends RuntimeException{
     public QueueEmpty(String message) {
         super(message);
     }
