@@ -49,5 +49,7 @@ public class MyInterface {
         Shape shape = new Circle();
 
         shape.display();
+        shape.printSome();
+        Shape.printName();
     }
 }
