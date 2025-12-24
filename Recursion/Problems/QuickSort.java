@@ -20,10 +20,10 @@ public class QuickSort {
 
         while (i < j) {
 
-            while(arr[i]<=pivot && i <= high-1){
+            while(i<=high && arr[i]<=pivot){
                 i++;
             }
-            while(arr[j]>pivot && j >= low+1){
+            while(j>=low && arr[j]>pivot){
                 j--;
             }
 
@@ -43,7 +43,7 @@ public class QuickSort {
 
     public static void main(String[] args) {
 
-        int[] arr = { 5, 4,6, 3, 2, 1,10 };
+        int[] arr = { 5, 4,6, 3, 2, 1,10,0,-1,58 };
         quickSort(arr, 0, (arr.length - 1));
 
         for (int i : arr) {
