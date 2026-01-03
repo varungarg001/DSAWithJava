@@ -1,7 +1,5 @@
 package LinkedList;
 
-// import org.w3c.dom.Node;
-
 public class ImplementionLL {
     Node<Integer> head;
     int size;
